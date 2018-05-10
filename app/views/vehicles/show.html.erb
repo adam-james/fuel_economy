@@ -15,5 +15,34 @@
   <%= @vehicle.year %>
 </p>
 
-<%= link_to 'Edit', edit_vehicle_path(@vehicle) %> |
+<p>
+  <strong>Barrels of Gas Per Year:</strong>
+  <%= @vehicle.annuel_barrels %>
+</p>
+
+<p>
+  <strong>MPG City:</strong>
+  <%= @vehicle.city_mpg %>
+</p>
+
+<p>
+  <strong>MPG Combined:</strong>
+  <%= @vehicle.combined_mpg %>
+</p>
+
+<p>
+  <strong>Annuel Fuel Cost:</strong>
+  <%= @vehicle.annuel_fuel_cost %>
+</p>
+
+<p>
+  <strong>MPG Highway:</strong>
+  <%= @vehicle.highway_mpg %>
+</p>
+
+<p>
+  <strong>You Save Spend:</strong>
+  <%= @vehicle.you_save_spend %>
+</p>
+
 <%= link_to 'Back', vehicles_path %>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_05_10_192341) do
+ActiveRecord::Schema.define(version: 2018_05_10_222448) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,12 @@ ActiveRecord::Schema.define(version: 2018_05_10_192341) do
     t.integer "year"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.float "annuel_barrels"
+    t.integer "city_mpg"
+    t.integer "combined_mpg"
+    t.integer "annuel_fuel_cost"
+    t.integer "highway_mpg"
+    t.integer "you_save_spend"
   end
 
 end
