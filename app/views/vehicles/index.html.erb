@@ -2,6 +2,8 @@
 
 <h1>Vehicles</h1>
 
+<%= paginate @vehicles %>
+
 <table>
   <thead>
     <tr>
@@ -24,10 +26,6 @@
       </tr>
     <% end %>
   </tbody>
-
-  <tfoot>
-    <%= paginate @vehicles %>
-  </tfoot>
 </table>
 
 <br>
