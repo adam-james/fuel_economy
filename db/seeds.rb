@@ -49,7 +49,7 @@ end
 vehicle_reader = VehicleReader.new
 count = 1
 vehicle_reader.foreach do |row|
-  break if count > 50
+  break if count > 500
   puts "#{row.year} #{row.make} #{row.model}"
 
   Vehicle.create! make: row.make, model: row.model, year: row.year

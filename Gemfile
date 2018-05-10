@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.4.2'
 
+gem 'kaminari'
+
 gem 'rubocop', require: false
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
